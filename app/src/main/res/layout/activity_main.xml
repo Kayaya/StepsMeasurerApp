@@ -150,6 +150,17 @@
             android:paddingTop="8dp"
             android:text="Start walking"
             android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Date"
+            android:textColor="@android:color/white" />
+
     </LinearLayout>
 
 </LinearLayout>

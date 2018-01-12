@@ -16,6 +16,9 @@ import android.widget.TextView;
 import android.support.v7.app.AlertDialog;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
     Sensor stepcounter, stepdetector;
 
@@ -60,6 +63,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 Toast.makeText(MainActivity.this, "Rewind...", Toast.LENGTH_SHORT).show();
             }
         });
+
+        //Setting up Time and Date
+        Calendar myCalendar = Calendar.getInstance();
+        System.out.println("Current time =>"+myCalendar.getTime());
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        //Add the date to a string
+        String current_date = sdf.format(myCalendar.getTime());
+        //Now display in Text View
+        TextView date_tv = (TextView)findViewById(R.id.date_tv);
+        date_tv.setText(current_date);
 
 
 
