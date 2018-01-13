@@ -1,6 +1,8 @@
 <resources>
-    <string name="app_name">Steps Measurer</string>
-    <string name="save">Save</string>
-    <string name="search">Save</string>
+    <string name="app_name">CounterStep</string>
+    <string name="about">About</string>
+    <string name="myactivity">MY ACTIVITY</string>
     <string name="settings">Settings</string>
+    <string name="title_activity_my_history">CS History</string>
+    <string name="home">HOME</string>
 </resources>

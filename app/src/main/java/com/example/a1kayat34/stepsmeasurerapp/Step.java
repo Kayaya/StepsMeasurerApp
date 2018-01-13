@@ -8,25 +8,25 @@ import java.text.SimpleDateFormat;
 
 public class Step {
     String date;
-    Long steps;
+    String step;
 
-    public Step(Long steps, String date){
-        this.steps = steps;
+    public Step(String steps, String date){
+        this.step = steps;
         this.date = date;
     }
 
     public String getDate() {
         return date;
     }
-    public float getSteps() {
-        return steps;
+    public String getStep() {
+        return step;
     }
 
     public void setDate(String date) {
         this.date = date;
     }
 
-    public void setSteps(Long steps) {
-        this.steps = steps;
+    public void setStep(String steps) {
+        this.step = steps;
     }
 }

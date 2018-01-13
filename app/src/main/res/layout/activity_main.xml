@@ -21,14 +21,38 @@
         android:text="Total values" />-->
 
     <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/history_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="Step History" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/first_section"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?android:attr/colorActivatedHighlight"
+        android:background="@android:color/holo_blue_light"
         android:orientation="vertical"
+        android:paddingBottom="20dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:paddingBottom="20dp"
         android:paddingTop="20dp">
 
         <TextView
@@ -43,12 +67,12 @@
         <LinearLayout
             android:id="@+id/middle_section"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/walk_btn"
-                android:layout_width="match_parent"
+                android:layout_width="@android:dimen/thumbnail_width"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
@@ -56,7 +80,7 @@
 
             <ImageButton
                 android:id="@+id/add_btn"
-                android:layout_width="match_parent"
+                android:layout_width="@android:dimen/thumbnail_width"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
@@ -64,7 +88,7 @@
 
             <ImageButton
                 android:id="@+id/rewind_btn"
-                android:layout_width="match_parent"
+                android:layout_width="@android:dimen/thumbnail_width"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
@@ -111,10 +135,11 @@
         android:id="@+id/botton_section"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="115dp"
-        android:paddingRight="20dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="65dp"
         android:paddingLeft="20dp"
-        android:orientation="vertical">
+        android:paddingRight="20dp">
 
         <TextView
             android:id="@+id/textView11"
@@ -131,14 +156,15 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:text="Steps"
-            android:textSize="90dp"
+            android:textSize="100dp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/footer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
         android:orientation="horizontal">
 
         <TextView
@@ -147,9 +173,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
-            android:paddingTop="8dp"
             android:text="Start walking"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black" />
 
         <TextView
             android:id="@+id/date_tv"
@@ -159,7 +184,7 @@
             android:layout_weight="1"
             android:gravity="right"
             android:text="Date"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/black" />
 
     </LinearLayout>
 
